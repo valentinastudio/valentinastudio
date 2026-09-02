@@ -8,5 +8,6 @@ precio: 21850
 estado: disponible
 comision: false
 order: 1
+stripe_link: "https://buy.stripe.com/eVq4gsdM5aLGcMT9A473G00"
 ---
 La idea partió de encontrar la forma más intensa de poder incluir lunares en un cuadro, sobre el pelaje de un animal. Es la segunda pieza más grande de la colección y una de las que más tomó tiempo en lograr; el pelaje blanco en un perro no es tan fácil de pintar como parece.
