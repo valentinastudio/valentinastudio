@@ -39,4 +39,5 @@ collections:
         default: "disponible"
       - { label: "¿Fue comisión?", name: "comision", widget: "boolean", default: false }
       - { label: "Orden (menor = aparece primero)", name: "order", widget: "number", value_type: "int", default: 99 }
+      - { label: "Link de pago (Stripe)", name: "stripe_link", widget: "string", required: false }
       - { label: "Descripción breve", name: "body", widget: "markdown" }
