@@ -20,7 +20,11 @@ nav: obra-original
       {% else %}
         <p style="font-size:1.6rem;font-weight:600;margin-bottom:24px;">${{ precio | currency }} MXN</p>
         <!-- Botón de compra: se conecta a un Payment Link de Stripe específico de esta pieza -->
-        <a href="#" class="btn">Comprar esta pieza →</a>
+{% if stripe_link %}
+  <a href="{{ stripe_link }}" class="btn" target="_blank" rel="noopener">Comprar esta pieza →</a>
+{% else %}
+  <a href="/comisiones/" class="btn btn-outline">Pregúntame por esta pieza →</a>
+{% endif %}
         <p class="field-hint" style="margin-top:14px;">Envío se cotiza aparte según tu ubicación. Recolección gratuita en CDMX.</p>
       {% endif %}
     </div>
