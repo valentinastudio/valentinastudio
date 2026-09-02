@@ -1,0 +1,42 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Esto activa el editor visual de Netlify (arrastrar/soltar en vivo) además del panel de admin.
+# Se puede quitar si no lo usas.
+site_url: https://valentina-studio.netlify.app
+display_url: https://valentina-studio.netlify.app
+
+media_folder: "src/assets/img/obras"
+public_folder: "/assets/img/obras"
+
+collections:
+  - name: "obras"
+    label: "Obras (tienda)"
+    label_singular: "Obra"
+    folder: "src/obras"
+    create: true
+    slug: "{{slug}}"
+    identifier_field: titulo
+    summary: "{{titulo}} — {{estado}}"
+    fields:
+      - { label: "Título de la pieza", name: "titulo", widget: "string" }
+      - { label: "Slug (URL, sin espacios ni acentos)", name: "slug", widget: "string" }
+      - { label: "Foto", name: "imagen", widget: "image" }
+      - { label: "Tamaño", name: "tamano", widget: "string", hint: "Ej. 60 × 80 cm" }
+      - label: "Técnica"
+        name: "tecnica"
+        widget: "select"
+        options: ["Acrílico sobre lienzo"]
+        default: "Acrílico sobre lienzo"
+      - { label: "Precio (MXN)", name: "precio", widget: "number", value_type: "int" }
+      - label: "Estado"
+        name: "estado"
+        widget: "select"
+        options:
+          - { label: "Disponible", value: "disponible" }
+          - { label: "Vendido", value: "vendido" }
+        default: "disponible"
+      - { label: "¿Fue comisión?", name: "comision", widget: "boolean", default: false }
+      - { label: "Orden (menor = aparece primero)", name: "order", widget: "number", value_type: "int", default: 99 }
+      - { label: "Descripción breve", name: "body", widget: "markdown" }

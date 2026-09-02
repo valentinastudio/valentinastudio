@@ -1,0 +1,80 @@
+---
+layout: base.njk
+title: Inicio
+nav: inicio
+---
+
+<section class="hero-full">
+  <img src="/assets/img/coleccion/proceso-vaca-oso.jpg" alt="Estudio de Valentina">
+  <div class="overlay">
+    <h1>Animales Cotidianos</h1>
+    <a href="/coleccion/" class="btn">Nueva Colección</a>
+  </div>
+</section>
+
+<div class="stripe-divider"></div>
+
+<section class="duo">
+  <div class="duo-panel">
+    <img src="/assets/img/obras/perro-pollito.jpg" alt="Obra original">
+    <a href="/obra-original/" class="btn">Obras Originales</a>
+  </div>
+  <div class="duo-panel">
+    <img src="/assets/img/obras/dalmata-botas-credenza.jpg" alt="Prints">
+    <a href="/prints/" class="btn">Prints</a>
+  </div>
+</section>
+
+<div class="stripe-divider"></div>
+
+<section class="carousel" id="carousel">
+  <img src="/assets/img/coleccion/pared-estudio-1.jpg" alt="Estudio de Valentina" class="active">
+  <img src="/assets/img/coleccion/pared-estudio-2.jpg" alt="Estudio de Valentina">
+  <img src="/assets/img/coleccion/pared-estudio-3.jpg" alt="Estudio de Valentina">
+  <div class="carousel-dots" id="carousel-dots"></div>
+</section>
+<script>
+  (function () {
+    const carousel = document.getElementById('carousel');
+    const images = carousel.querySelectorAll('img');
+    const dotsWrap = document.getElementById('carousel-dots');
+    images.forEach((_, i) => {
+      const d = document.createElement('span');
+      if (i === 0) d.classList.add('active');
+      dotsWrap.appendChild(d);
+    });
+    const dots = dotsWrap.children;
+    let current = 0;
+    setInterval(function () {
+      images[current].classList.remove('active');
+      dots[current].classList.remove('active');
+      current = (current + 1) % images.length;
+      images[current].classList.add('active');
+      dots[current].classList.add('active');
+    }, 3500);
+  })();
+</script>
+
+<section class="about-scallop">
+  <div class="copy">
+    <div class="photo-frame">
+      <img src="/assets/img/site/valentina-portrait.jpg" alt="Valentina">
+    </div>
+    <h2 class="display">Sobre mí</h2>
+    <p>Formada en cine, aprendí a pensar en personajes, contextos y preguntas sin respuesta antes de aprender a pensar en composición y color — esa lógica narrativa nunca me abandonó cuando cambié la cámara por el pincel. Pinto patrones, color y animales metidos en situaciones que no explico — el espectador se inventa la historia.</p>
+    <h2 class="comisiones-label display">Comisiones</h2>
+    <a href="/comisiones/" class="btn">Saber más</a>
+  </div>
+  <div class="side-photo">
+    <img src="/assets/img/obras/torre-animales.jpg" alt="Piezas de Valentina">
+  </div>
+</section>
+
+<section class="newsletter">
+  <h2>Mantente informado sobre nuevas colecciones y lanzamientos</h2>
+  <form class="newsletter-form" name="newsletter" method="POST" data-netlify="true">
+    <input type="hidden" name="form-name" value="newsletter">
+    <input type="email" name="email" placeholder="email@ejemplo.com" required>
+    <button type="submit" class="btn">Subscribirse</button>
+  </form>
+</section>
