@@ -1,7 +1,7 @@
 ---
 titulo: Uno de ellos sí sabe y no te va a decir
 slug: uno-de-ellos-sabe
-imagen: /assets/img/9.jpg
+imagen: /assets/img/dalamtas.png
 tamano: 115 × 115 cm
 tecnica: Acrílico sobre lienzo
 precio: 21850
