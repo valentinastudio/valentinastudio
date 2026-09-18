@@ -1,7 +1,7 @@
 ---
 titulo: Dálmata en bota
 slug: dalmata-en-bota
-imagen: /assets/img/obras/botas-lunares.jpg
+imagen: /assets/img/4.jpg
 tamano: 80 × 100 cm
 tecnica: Acrílico sobre lienzo
 precio: 17100
