@@ -1,7 +1,7 @@
 ---
 titulo: Pollo en perro
 slug: pollo-en-perro
-imagen: /assets/img/obras/perro-pollito.jpg
+imagen: /assets/img/pollo-en-perro.jpg
 tamano: 40 × 50 cm
 tecnica: Acrílico sobre lienzo
 precio: 8550
