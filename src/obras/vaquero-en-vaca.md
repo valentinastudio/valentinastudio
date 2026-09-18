@@ -1,7 +1,7 @@
 ---
 titulo: Vaquero en vaca
 slug: vaquero-en-vaca
-imagen: /assets/img/untitled-design-1-.jpg
+imagen: /assets/img/vaquero-en-vaca.png
 tamano: 70 × 70 cm
 tecnica: Acrílico sobre lienzo
 precio: 15000
