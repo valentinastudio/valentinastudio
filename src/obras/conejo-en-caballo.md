@@ -1,7 +1,7 @@
 ---
 titulo: Conejo en caballo
 slug: conejo-en-caballo
-imagen: /assets/img/obras/horse-bunny.jpg
+imagen: /assets/img/2.jpg
 tamano: 50 × 60 cm
 tecnica: Acrílico sobre lienzo
 precio: 10450
