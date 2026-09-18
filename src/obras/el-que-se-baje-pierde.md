@@ -1,7 +1,7 @@
 ---
 titulo: El que se baje, pierde
 slug: el-que-se-baje-pierde
-imagen: /assets/img/obras/torre-animales.jpg
+imagen: /assets/img/5.jpg
 tamano: 40 × 60 cm
 tecnica: Acrílico sobre lienzo
 precio: 9500
