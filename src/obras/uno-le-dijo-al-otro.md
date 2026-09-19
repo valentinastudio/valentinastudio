@@ -1,7 +1,7 @@
 ---
 titulo: Uno le dijo al otro pero no sabemos quién le dijo a quién
 slug: uno-le-dijo-al-otro
-imagen: /assets/img/10.jpg
+imagen: /assets/img/uno-le-dijo-al-otro.png
 tamano: 50 × 60 cm
 tecnica: Acrílico sobre lienzo
 precio: 10450
