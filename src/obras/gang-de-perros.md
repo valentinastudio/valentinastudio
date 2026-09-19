@@ -1,7 +1,7 @@
 ---
 titulo: Y si se metieron con ellos...
 slug: gang-de-perros
-imagen: /assets/img/6.jpg
+imagen: /assets/img/y-si-se-metieron.png
 tamano: 70 × 100 cm
 tecnica: Acrílico sobre lienzo
 precio: 16150
