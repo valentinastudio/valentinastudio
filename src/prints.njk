@@ -1,0 +1,28 @@
+---
+layout: base.njk
+title: Prints
+nav: prints
+permalink: /prints/
+---
+
+<section class="collection-teaser" style="min-height:64vh;display:flex;flex-direction:column;justify-content:center;">
+  <span class="label">Próximamente</span>
+  <h2 class="display">Prints en camino.</h2>
+  <p>Estoy preparando reproducciones de mis piezas en tamaños accesibles. Deja tu correo y sé de las primeras en saber cuando estén listas.</p>
+
+  <form name="prints-interes" method="POST" data-netlify="true" style="display:flex;gap:14px;flex-direction:column;max-width:420px;margin:0 auto;">
+    <input type="hidden" name="form-name" value="prints-interes">
+    <input type="email" name="email" placeholder="email@ejemplo.com" required
+      style="padding:15px 22px;border-radius:999px;border:1px solid rgba(58,42,30,0.25);font-family:inherit;font-size:0.95rem;background:var(--cream);">
+    <button type="submit" class="btn" style="background:var(--wine);color:var(--cream);">Avísame →</button>
+  </form>
+</section>
+
+<script>
+  if (location.protocol === "file:") {
+    document.querySelector('form[name="prints-interes"]').addEventListener("submit", function (e) {
+      e.preventDefault();
+      alert("Vista previa: este formulario se conecta de verdad en cuanto el sitio esté publicado.");
+    });
+  }
+</script>
