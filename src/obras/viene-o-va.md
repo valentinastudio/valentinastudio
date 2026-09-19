@@ -1,7 +1,7 @@
 ---
 titulo: ¿Viene o va?
 slug: viene-o-va
-imagen: /assets/img/site/placeholder-obra.jpg
+imagen: /assets/img/11.png
 tamano: 40 × 50 cm
 tecnica: Acrílico sobre lienzo
 precio: 8550
