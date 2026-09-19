@@ -1,7 +1,7 @@
 ---
 titulo: ¿Cómo llegó él ahí?
 slug: como-llego-el-ahi
-imagen: /assets/img/1.png
+imagen: /assets/img/como-llego.png
 tamano: 230 × 140 cm
 tecnica: Acrílico sobre lienzo
 precio: 35150
