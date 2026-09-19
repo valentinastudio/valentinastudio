@@ -1,7 +1,7 @@
 ---
 titulo: Zapatitos
 slug: zapatitos
-imagen: /assets/img/12.png
+imagen: /assets/img/zapatitos.png
 tamano: 35 × 45 cm (lienzo con marco)
 tecnica: Acrílico sobre lienzo
 precio: 6900
