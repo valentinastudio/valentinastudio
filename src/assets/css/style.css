@@ -183,6 +183,10 @@ nav .logo img{height:26px;}
 .piece-card .status{font-weight:600;color:var(--olive);}
 .piece-card .status.vendido{color:var(--wine);}
 .piece-card .price{font-weight:600;color:var(--ink);}
+.obra-layout{display:grid;grid-template-columns:1.1fr 0.9fr;gap:60px;align-items:start;}
+@media(max-width:860px){
+  .obra-layout{grid-template-columns:1fr;gap:28px;}
+}
 
 /* ---------- QUOTE ---------- */
 .quote-section{background:var(--ink);color:var(--cream);padding:110px 5vw;text-align:center;}
