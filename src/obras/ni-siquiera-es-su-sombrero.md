@@ -1,7 +1,7 @@
 ---
 titulo: Sí, pero ni siquiera es su sombrero
 slug: ni-siquiera-es-su-sombrero
-imagen: /assets/img/obras/dachshund-vaquero.jpg
+imagen: /assets/img/sombrero.png
 tamano: 45 × 30 cm
 tecnica: Acrílico sobre lienzo
 precio: 6300
