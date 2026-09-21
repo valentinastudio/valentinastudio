@@ -1,7 +1,7 @@
 ---
 titulo: Cualquiera de ellos
 slug: cualquiera-de-ellos
-imagen: /assets/img/obras/dalmatas-gemelos.jpg
+imagen: /assets/img/cualquiera-de-ellos.png
 tamano: 40 × 50 cm
 tecnica: Acrílico sobre lienzo
 precio: 8550
