@@ -5,7 +5,7 @@ imagen: /assets/img/el-que-se-baje.png
 tamano: 40 × 60 cm
 tecnica: Acrílico sobre lienzo
 precio: 9500
-estado: disponible
+estado: vendido
 comision: false
 order: 8
 stripe_link: https://buy.stripe.com/7sYfZa23naLG14baE873G06
