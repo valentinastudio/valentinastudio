@@ -1,0 +1,44 @@
+---
+layout: base.njk
+nav: obra-original
+---
+<section class="section" style="padding-top:60px;">
+  <div class="obra-layout">
+    <div class="photo" style="box-shadow:0 1px 3px rgba(58,42,30,0.08);">
+      <img src="{{ imagen }}" alt="{{ titulo }}">
+    </div>
+    <div>
+      <span class="label">{{ tecnica }}</span>
+      <h1 class="display" style="font-size:2rem;margin:12px 0 6px;">{{ titulo }}</h1>
+      <p style="color:#7a6a5a;margin:0 0 24px;">{{ tamano }}</p>
+
+      <div style="font-size:1.02rem;line-height:1.7;color:#5a4a3c;margin-bottom:30px;">{{ content | safe }}</div>
+
+      {% if estado == "vendido" %}
+        <p class="status vendido" style="font-size:1.1rem;font-weight:600;margin-bottom:20px;">Vendido</p>
+        <a href="/comisiones/" class="btn btn-outline">¿Te gustó? Pregunta por algo similar →</a>
+      {% else %}
+        <p class="consult-intro">¿Te interesa esta pieza? Escríbeme y te comparto precio y disponibilidad.</p>
+        <form class="consult-form" name="consulta-obra" method="POST" action="/gracias-consulta/" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="consulta-obra">
+          <input type="hidden" name="obra" value="{{ titulo }}">
+          <p style="display:none;"><label>No llenar: <input name="bot-field"></label></p>
+          <div class="field">
+            <label for="c-nombre">Tu nombre</label>
+            <input type="text" id="c-nombre" name="nombre" required>
+          </div>
+          <div class="field">
+            <label for="c-email">Correo</label>
+            <input type="email" id="c-email" name="email" required>
+          </div>
+          <div class="field">
+            <label for="c-mensaje">Mensaje (opcional)</label>
+            <textarea id="c-mensaje" name="mensaje" placeholder="Cuéntame desde dónde nos escribes o cualquier duda."></textarea>
+          </div>
+          <button type="submit" class="btn">Consultar esta pieza →</button>
+        </form>
+        <p class="field-hint" style="margin-top:14px;">Envíos dentro de México. Recolección gratuita en CDMX. <a href="/envios-devoluciones/">Ver política de envíos y devoluciones →</a></p>
+      {% endif %}
+    </div>
+  </div>
+</section>
