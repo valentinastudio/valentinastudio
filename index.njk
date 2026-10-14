@@ -1,0 +1,80 @@
+---
+layout: base.njk
+title: Inicio
+nav: inicio
+description: "Animales Cotidianos — próximo drop de prints en edición limitada y obra original de Valentina. Inscríbete para acceso anticipado."
+---
+
+<section class="hero-full hero-drop" id="drop">
+  <img src="/assets/img/coleccion/hero-inicio.jpg" alt="Valentina en su estudio">
+  <div class="overlay">
+    <span class="drop-label">Próximo drop</span>
+    <h1>Animales Cotidianos</h1>
+    <p class="drop-lede">Prints de edición limitada y obra original. Inscríbete para tener acceso anticipado y elegir antes que nadie.</p>
+    {% set origen = "home-hero" %}{% include "drop-form.njk" %}
+    <p class="drop-fine">Solo te escribo cuando haya novedades. Nada de spam.</p>
+  </div>
+</section>
+
+<div class="stripe-divider"></div>
+
+<section class="duo">
+  <div class="duo-panel">
+    <img src="/assets/img/obras/perro-pollito.jpg" alt="Obra original">
+    <a href="/obra-original/" class="btn">Ver obra original</a>
+  </div>
+  <div class="duo-panel">
+    <img src="/assets/img/obras/dalmata-botas-credenza.jpg" alt="Comprar">
+    <a href="/comprar/" class="btn">Comprar</a>
+  </div>
+</section>
+
+<div class="stripe-divider"></div>
+
+<section class="carousel" id="carousel">
+  <img src="/assets/img/coleccion/pared-estudio-1.jpg" alt="Estudio de Valentina" class="active">
+  <img src="/assets/img/coleccion/pared-estudio-2.jpg" alt="Estudio de Valentina">
+  <img src="/assets/img/coleccion/pared-estudio-3.jpg" alt="Estudio de Valentina">
+  <div class="carousel-dots" id="carousel-dots"></div>
+</section>
+<script>
+  (function () {
+    const carousel = document.getElementById('carousel');
+    const images = carousel.querySelectorAll('img');
+    const dotsWrap = document.getElementById('carousel-dots');
+    images.forEach((_, i) => {
+      const d = document.createElement('span');
+      if (i === 0) d.classList.add('active');
+      dotsWrap.appendChild(d);
+    });
+    const dots = dotsWrap.children;
+    let current = 0;
+    setInterval(function () {
+      images[current].classList.remove('active');
+      dots[current].classList.remove('active');
+      current = (current + 1) % images.length;
+      images[current].classList.add('active');
+      dots[current].classList.add('active');
+    }, 3500);
+  })();
+</script>
+
+<section class="about-scallop">
+  <div class="copy">
+    <div class="photo-frame">
+      <img src="/assets/img/site/valentina-portrait.jpg" alt="Valentina">
+    </div>
+    <h2 class="display">Sobre mí</h2>
+    <p>Formada en cine, aprendí a pensar en personajes, contextos y preguntas sin respuesta antes de aprender a pensar en composición y color — esa lógica narrativa nunca me abandonó cuando cambié la cámara por el pincel. Pinto patrones, color y animales metidos en situaciones que no explico — el espectador se inventa la historia.</p>
+    <h2 class="comisiones-label display">Comisiones</h2>
+    <a href="/comisiones/" class="btn">Saber más</a>
+  </div>
+  <div class="side-photo">
+    <img src="/assets/img/obras/torre-animales.jpg" alt="Piezas de Valentina">
+  </div>
+</section>
+
+<section class="newsletter">
+  <h2 class="script-title">Regístrate para el primer drop y sé de las primeras personas en enterarte.</h2>
+  {% set origen = "home-footer" %}{% set boton = "Avísame →" %}{% include "drop-form.njk" %}
+</section>
