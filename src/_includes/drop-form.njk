@@ -1,0 +1,7 @@
+<form class="drop-form" name="drop-lista" method="POST" action="/gracias/" data-netlify="true" netlify-honeypot="bot-field">
+  <input type="hidden" name="form-name" value="drop-lista">
+  <input type="hidden" name="origen" value="{{ origen }}">
+  <p style="display:none;"><label>No llenar: <input name="bot-field"></label></p>
+  <input type="email" name="email" placeholder="tu@correo.com" aria-label="Tu correo" required>
+  <button type="submit" class="btn btn-wine">{{ boton or "Quiero entrar a la lista →" }}</button>
+</form>
