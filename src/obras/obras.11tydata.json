@@ -1,4 +1,0 @@
-{
-  "layout": "obra.njk",
-  "permalink": "/obras/{{ slug }}/"
-}
