@@ -1,5 +1,8 @@
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets");
+  // Las fotos de las subcarpetas (coleccion, obras, site) quedaron en "src 2/assets/img" al subirlas.
+  // Esta línea las copia al sitio igual que si estuvieran en src/assets/img.
+  eleventyConfig.addPassthroughCopy({ "src 2/assets/img": "assets/img" });
   eleventyConfig.addPassthroughCopy("src/admin");
   eleventyConfig.addShortcode("currentYear", () => `${new Date().getFullYear()}`);
   eleventyConfig.addFilter("currency", (num) => {
